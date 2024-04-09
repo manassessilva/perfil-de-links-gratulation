@@ -1,0 +1,148 @@
+:root {
+    --background-color: #070f2b;
+    --card-color: #1B1A55;
+    --link-color: #535C91;
+    --link-color-hover: #9290C3;
+    --baseboard-color: #202060;
+    --text-color: #F6F5F5;
+    --emphasis-color: #F2A71B;
+
+    --font-name: "montserrat", sans-serif;
+    --font-function: "inter", sans-serif;
+    --font-description: "inter", sans-serif;
+    --font-link: "montsserat", sans-serif;
+    --font-baseboard: "montsserat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+
+.gratulation_content {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.gratulation_content_title {
+    font-family: var(--font-name);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.gratulation_content_image {
+    width: 70%;
+    margin-top: 20px;
+    border-radius: 30% 60% 35% 50%;
+}
+
+.gratulation_content_image_legend {
+    font-family: var(--font-name);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.5rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.gratulation_content_text {
+    font-family: var(--font-name);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.gratulation_content_subtitle {
+    font-family: var(--font-name);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--emphasis-color);
+}
+
+.baseboard {
+    font-family: var(--font-baseboard);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    text-align: center;
+    color: var(--text-color);
+    padding: 8px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: var(--baseboard-color);
+}
+
+/*Responsividade Monitores*/
+@media (width >= 1600px) {
+    .gratulation_content {
+        width: 30%;
+        gap: 40px;
+        text-align: center;
+    }
+}
+
+/*Responsividade desktop*/
+@media (width <= 1200px) {
+    .gratulation_content {
+        width: 30%;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+/*Responsividade tablet grandes*/
+@media (width <= 992px) {
+    .gratulation_content {
+        width: 80%;
+        gap: 70px;
+        text-align: center;
+    }
+}
+
+/*Responsividade tablets pequenos*/
+@media (width <= 768px) {
+    .gratulation_content {
+        width: 80%;
+        gap: 60px;
+        text-align: center;
+    }
+}
+
+/*Responsividade smartphones*/
+@media (width <= 576px) {
+    .gratulation_content {
+        width: 80%;
+        gap: 50px;
+        text-align: center;
+    }
+}
+
+/*Responsividade dispositivos pequenos*/
+@media (width <= 300px) {
+    .gratulation_content {
+        width: 80%;
+        text-align: center;
+    }
+}
